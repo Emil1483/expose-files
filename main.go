@@ -32,7 +32,7 @@ func getEnv(key, defaultValue string) string {
 }
 
 func main() {
-	http.HandleFunc("/sendEmail.xlsm", buildFileHandler("sendEmail.xlsm"))
+	http.HandleFunc("/", buildFileHandler("sendEmails.xlsm"))
 
 	port := getEnv("PORT", "8080")
 
